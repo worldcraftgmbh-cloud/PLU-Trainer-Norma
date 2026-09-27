@@ -379,7 +379,7 @@
         <div class="flex flex-col sm:flex-row gap-2.5 mt-1">
           <div class="relative flex-1">
             <input type="text" id="librarySearchInput" oninput="filterLibrary()" 
-              placeholder="Name oder PLU-Code suchen..."
+              placeholder="Name oder PLU-Code suchen (z. B. Gurken, 301, 814)..."
               class="w-full pl-9 pr-3 py-2 rounded-xl bg-slate-950 border border-[#FFED00]/50 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-[#FFED00] transition-all">
             <span class="absolute left-3 top-2.5 text-slate-400 text-sm">🔍</span>
           </div>
@@ -387,13 +387,36 @@
           <select id="libraryFilterSelect" onchange="filterLibrary()"
             class="px-3 py-2 rounded-xl bg-slate-950 border border-[#FFED00]/50 text-sm text-slate-200 focus:outline-none focus:border-[#FFED00] font-mono">
             <option value="ALL">Alle Kategorien</option>
-            <option value="Obst">Obst</option>
-            <option value="Gemüse">Gemüse</option>
-            <option value="Backwaren">Backwaren</option>
-            <option value="Non-Food">Non-Food</option>
+            <option value="Gemüse">Gemüse (Seite 1)</option>
+            <option value="Obst">Obst (Seite 1-2)</option>
+            <option value="Backwaren">Backwaren (Seite 3-4)</option>
+            <option value="Getränke">Getränke (Seite 5)</option>
+            <option value="Stückware">Stückware</option>
+            <option value="Wiegeware">Wiegeware</option>
+            <option value="Prebake">Prebake</option>
+            <option value="Kasten / Flasche">Kasten / Flasche</option>
             <option value="HAS_IMAGE">Mit Ordner-Bild</option>
             <option value="NO_IMAGE">Neutraler Platzhalter</option>
           </select>
+        </div>
+
+        <!-- PLU Stammdaten Schnellabfrage Widget (getArticleByPLU API) -->
+        <div class="mt-2 p-3.5 rounded-xl bg-slate-950 border border-[#FFED00]/40 flex flex-col gap-2">
+          <div class="flex items-center justify-between text-xs font-mono text-[#FFED00] font-bold">
+            <span>⚡ PLU-Stammdaten Einzelabfrage (getArticleByPLU)</span>
+            <span class="text-[10px] text-slate-400">Eindeutiger Treffer / "PLU nicht gefunden"</span>
+          </div>
+          <div class="flex gap-2">
+            <input type="text" id="pluLookupInput" placeholder="z. B. 4, 301, 814, 448/449 oder 9999..."
+              onkeydown="if(event.key === 'Enter') runPluLookup()"
+              class="flex-1 px-3 py-2 rounded-lg bg-slate-900 border border-slate-700 text-sm font-mono text-[#FFED00] placeholder-slate-500 focus:outline-none focus:border-[#FFED00]">
+            <button onclick="runPluLookup()" class="px-4 py-2 rounded-lg bg-[#D6001C] hover:bg-[#E30613] text-[#FFED00] border border-[#FFED00]/60 font-mono font-black text-xs transition-all shadow-md">
+              🔍 ABFRAGEN
+            </button>
+          </div>
+          <div id="pluLookupResult" class="hidden p-3 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono text-slate-200">
+            <!-- JS dynamic output -->
+          </div>
         </div>
       </div>
 
@@ -458,8 +481,386 @@
   <script>
 
     // NORMA EDITION - EMPTY START DATASET & STRICT LOCALSTORAGE ISOLATION
-    const normaItems = [];
+    const normaItems = [
+  {
+    "id": 1,
+    "plu": "4",
+    "article_number": "52255",
+    "article": "Gurken",
+    "name": "Gurken",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "id": 2,
+    "plu": "12",
+    "article_number": "52210",
+    "article": "Eisbergsalat",
+    "name": "Eisbergsalat",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "id": 3,
+    "plu": "15",
+    "article_number": "52280",
+    "article": "Zucchini lose",
+    "name": "Zucchini lose",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "id": 4,
+    "plu": "22",
+    "article_number": "52300",
+    "article": "Tomaten lose",
+    "name": "Tomaten lose",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "id": 5,
+    "plu": "25",
+    "article_number": "52315",
+    "article": "Paprika rot lose",
+    "name": "Paprika rot lose",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "id": 6,
+    "plu": "30",
+    "article_number": "52340",
+    "article": "Kartoffeln 2,5kg Sack",
+    "name": "Kartoffeln 2,5kg Sack",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "id": 7,
+    "plu": "45",
+    "article_number": "52390",
+    "article": "Speisezwiebeln 1kg Netz",
+    "name": "Speisezwiebeln 1kg Netz",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "id": 8,
+    "plu": "301",
+    "article_number": "50004",
+    "article": "Bananen",
+    "name": "Bananen",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "id": 9,
+    "plu": "305",
+    "article_number": "50020",
+    "article": "Äpfel Jonagold lose",
+    "name": "Äpfel Jonagold lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "id": 10,
+    "plu": "310",
+    "article_number": "50045",
+    "article": "Tafelbirnen lose",
+    "name": "Tafelbirnen lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "id": 11,
+    "plu": "320",
+    "article_number": "50080",
+    "article": "Clementinen lose",
+    "name": "Clementinen lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 2
+  },
+  {
+    "id": 12,
+    "plu": "325",
+    "article_number": "50100",
+    "article": "Saftorangen 1,5kg Netz",
+    "name": "Saftorangen 1,5kg Netz",
+    "category": "Obst",
+    "sales_type": "Stückware",
+    "source_page": 2
+  },
+  {
+    "id": 13,
+    "plu": "330",
+    "article_number": "50125",
+    "article": "Zitronen 500g Netz",
+    "name": "Zitronen 500g Netz",
+    "category": "Obst",
+    "sales_type": "Stückware",
+    "source_page": 2
+  },
+  {
+    "id": 14,
+    "plu": "340",
+    "article_number": "50160",
+    "article": "Tafeltrauben hell lose",
+    "name": "Tafeltrauben hell lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 2
+  },
+  {
+    "id": 15,
+    "plu": "350",
+    "article_number": "50200",
+    "article": "Wassermelone lose",
+    "name": "Wassermelone lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 2
+  },
+  {
+    "id": 16,
+    "plu": "360",
+    "article_number": "50240",
+    "article": "Mango genussreif",
+    "name": "Mango genussreif",
+    "category": "Obst",
+    "sales_type": "Stückware",
+    "source_page": 2
+  },
+  {
+    "id": 17,
+    "plu": "370",
+    "article_number": "50280",
+    "article": "Avocado vorgereift",
+    "name": "Avocado vorgereift",
+    "category": "Obst",
+    "sales_type": "Stückware",
+    "source_page": 2
+  },
+  {
+    "id": 18,
+    "plu": "814",
+    "article_number": null,
+    "article": "Weizenbrötchen",
+    "name": "Weizenbrötchen",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "id": 19,
+    "plu": "0814",
+    "article_number": null,
+    "article": "Kaiserbrötchen",
+    "name": "Kaiserbrötchen",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "id": 20,
+    "plu": "815",
+    "article_number": null,
+    "article": "Mehrkornbrötchen",
+    "name": "Mehrkornbrötchen",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "id": 21,
+    "plu": "820",
+    "article_number": null,
+    "article": "Buttercroissant",
+    "name": "Buttercroissant",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "id": 22,
+    "plu": "825",
+    "article_number": null,
+    "article": "Laugenstange",
+    "name": "Laugenstange",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "id": 23,
+    "plu": "830",
+    "article_number": null,
+    "article": "Schoko-Croissant",
+    "name": "Schoko-Croissant",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "id": 24,
+    "plu": "840",
+    "article_number": null,
+    "article": "Kürbiskernbrötchen",
+    "name": "Kürbiskernbrötchen",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "id": 25,
+    "plu": "850",
+    "article_number": null,
+    "article": "Weltmeisterbrötchen",
+    "name": "Weltmeisterbrötchen",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "id": 26,
+    "plu": "860",
+    "article_number": null,
+    "article": "Steinofenbaguette 250g",
+    "name": "Steinofenbaguette 250g",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "id": 27,
+    "plu": "870",
+    "article_number": null,
+    "article": "Puten-Käse-Stange",
+    "name": "Puten-Käse-Stange",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 4
+  },
+  {
+    "id": 28,
+    "plu": "875",
+    "article_number": null,
+    "article": "Pizza-Snack Salami",
+    "name": "Pizza-Snack Salami",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 4
+  },
+  {
+    "id": 29,
+    "plu": "880",
+    "article_number": null,
+    "article": "Bauernbrot 750g",
+    "name": "Bauernbrot 750g",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 4
+  },
+  {
+    "id": 30,
+    "plu": "885",
+    "article_number": null,
+    "article": "Krustenbrot 1000g",
+    "name": "Krustenbrot 1000g",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 4
+  },
+  {
+    "id": 31,
+    "plu": "890",
+    "article_number": null,
+    "article": "Vollkornbrot 500g",
+    "name": "Vollkornbrot 500g",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 4
+  },
+  {
+    "id": 32,
+    "plu": "448/449",
+    "article_number": null,
+    "article": "Schwip Schwap / light 0,5l",
+    "name": "Schwip Schwap / light 0,5l",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
+  },
+  {
+    "id": 33,
+    "plu": "450",
+    "article_number": "40012",
+    "article": "Mineralwasser Sprudel 0,7l Kasten",
+    "name": "Mineralwasser Sprudel 0,7l Kasten",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
+  },
+  {
+    "id": 34,
+    "plu": "455",
+    "article_number": "40035",
+    "article": "Pilsener Bier 20x0,5l Kasten",
+    "name": "Pilsener Bier 20x0,5l Kasten",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
+  },
+  {
+    "id": 35,
+    "plu": "460",
+    "article_number": "40080",
+    "article": "Cola / Zero 1,5l Kasten 6er",
+    "name": "Cola / Zero 1,5l Kasten 6er",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
+  },
+  {
+    "id": 36,
+    "plu": "465",
+    "article_number": "40110",
+    "article": "Fruchtsaft Orange 1,0l PET Kasten",
+    "name": "Fruchtsaft Orange 1,0l PET Kasten",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
+  }
+];
     const STORAGE_KEY = 'norma_plu_stats_v1';
+
+    /**
+     * Eindeutige NORMA PLU-Stammdaten-Abfrage.
+     * @param {string} pluQuery - Die gesuchte PLU-Nummer (z.B. "4", "0814", "448/449").
+     * @returns {Object|string} Das Artikel-Objekt bei Treffer oder exakt "PLU nicht gefunden".
+     */
+    function getArticleByPLU(pluQuery) {
+      if (pluQuery === null || pluQuery === undefined) return "PLU nicht gefunden";
+      const searchStr = String(pluQuery).trim();
+      if (!searchStr) return "PLU nicht gefunden";
+
+      const hit = appData.find(item => String(item.plu).trim() === searchStr);
+      return hit ? hit : "PLU nicht gefunden";
+    }
+    window.getArticleByPLU = getArticleByPLU;
+    window.lookupPLU = getArticleByPLU;
+
     let appData = [];
     let soundEnabled = true;
     let audioCtx = null;
@@ -1142,14 +1543,20 @@
       document.getElementById('libraryCountBadge').innerText = appData.length;
 
       let filtered = appData.filter(item => {
-        const matchesSearch = item.name.toLowerCase().includes(searchVal) || item.plu.includes(searchVal);
+        const articleTitle = item.article || item.name || '';
+        const articleNum = item.article_number || '';
+        const matchesSearch = articleTitle.toLowerCase().includes(searchVal) || 
+                              String(item.plu).toLowerCase().includes(searchVal) ||
+                              articleNum.toLowerCase().includes(searchVal);
         if (!matchesSearch) return false;
 
         if (filterVal === 'ALL') return true;
         if (filterVal === 'HAS_IMAGE') return !!item.image;
         if (filterVal === 'NO_IMAGE') return !item.image;
 
-        return item.name.toLowerCase().includes(filterVal.toLowerCase());
+        const catMatch = (item.category || '').toLowerCase().includes(filterVal.toLowerCase());
+        const salesMatch = (item.sales_type || '').toLowerCase().includes(filterVal.toLowerCase());
+        return catMatch || salesMatch;
       });
 
       if (filtered.length === 0) {
@@ -1165,14 +1572,19 @@
 
       container.innerHTML = filtered.map(item => {
         const total = (item.correctCount || 0) + (item.wrongCount || 0);
-        const hitRate = total > 0 ? Math.round(((item.correctCount || 0) / total) * 100) : 0;
 
         return `
           <div class="rounded-xl bg-slate-900/95 border border-slate-700/80 hover:border-[#FFED00]/60 p-3.5 flex flex-col justify-between gap-3 shadow-md transition-all">
             <div class="flex items-start justify-between gap-2">
               <div>
-                <span class="text-[11px] font-mono text-[#FFED00] uppercase tracking-wider block mb-0.5">ID #${item.id}</span>
-                <h3 class="font-bold text-sm text-white leading-snug">${item.name}</h3>
+                <div class="flex items-center gap-1.5 mb-1">
+                  <span class="px-2 py-0.5 rounded bg-slate-950 border border-slate-700 text-[10px] font-mono text-[#FFED00] uppercase font-bold">${item.category || 'NORMA'}</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-950 border border-slate-800 text-[10px] font-mono text-slate-400">S. ${item.source_page || 1}</span>
+                </div>
+                <h3 class="font-bold text-sm text-white leading-snug">${item.article || item.name}</h3>
+                <div class="text-[11px] font-mono text-slate-400 mt-1">
+                  Art.-Nr: <span class="text-slate-200 font-bold">${item.article_number !== null ? item.article_number : 'null (Scan-frei)'}</span> • ${item.sales_type || 'Stückware'}
+                </div>
               </div>
               <span class="px-2.5 py-1 rounded-lg bg-[#D6001C] border border-[#FFED00]/50 text-[#FFED00] font-mono font-black text-sm tracking-wider shrink-0 shadow-sm">
                 PLU ${item.plu}
@@ -1181,7 +1593,7 @@
 
             <div class="w-full h-36 rounded-lg bg-slate-950 border border-slate-800 flex items-center justify-center overflow-hidden relative shadow-inner">
               ${item.image ? `
-                <img src="${item.image}" alt="${item.name}" 
+                <img src="${item.image}" alt="${item.article || item.name}" 
                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                   class="max-h-full max-w-full object-contain p-1.5 rounded">
                 <div class="hidden flex-col items-center justify-center text-slate-600">
@@ -1214,6 +1626,33 @@
     function filterLibrary() {
       renderLibraryItems();
     }
+
+    function runPluLookup() {
+      const query = document.getElementById('pluLookupInput').value;
+      const res = getArticleByPLU(query);
+      const resultDiv = document.getElementById('pluLookupResult');
+      resultDiv.classList.remove('hidden');
+
+      if (res === "PLU nicht gefunden") {
+        resultDiv.innerHTML = `<div class="p-2 bg-red-950/60 border border-red-500/40 rounded-md text-red-400 font-bold text-center">❌ PLU nicht gefunden</div>`;
+      } else {
+        resultDiv.innerHTML = `
+          <div class="flex flex-col gap-1.5 p-1">
+            <div class="flex items-center justify-between">
+              <strong class="text-[#FFED00] text-sm">${res.article}</strong>
+              <span class="px-2.5 py-0.5 rounded bg-[#D6001C] text-[#FFED00] font-black text-xs border border-[#FFED00]/50">PLU ${res.plu}</span>
+            </div>
+            <div class="text-[11px] text-slate-300 grid grid-cols-2 gap-1 pt-1.5 border-t border-slate-800">
+              <span>Art.-Nr: <strong class="text-white">${res.article_number !== null ? res.article_number : 'null'}</strong></span>
+              <span>Kategorie: <strong class="text-white">${res.category}</strong></span>
+              <span>Verkaufstyp: <strong class="text-white">${res.sales_type}</strong></span>
+              <span>Quellseite: <strong class="text-white">Seite ${res.source_page}</strong></span>
+            </div>
+          </div>
+        `;
+      }
+    }
+    window.runPluLookup = runPluLookup;
 
 
     // STATS & 7-DAY ACTIVITY BAR CHART

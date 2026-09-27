@@ -1,0 +1,290 @@
+[
+  {
+    "plu": "4",
+    "article_number": "52255",
+    "article": "Gurken",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "12",
+    "article_number": "52210",
+    "article": "Eisbergsalat",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "15",
+    "article_number": "52280",
+    "article": "Zucchini lose",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "22",
+    "article_number": "52300",
+    "article": "Tomaten lose",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "25",
+    "article_number": "52315",
+    "article": "Paprika rot lose",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "30",
+    "article_number": "52340",
+    "article": "Kartoffeln 2,5kg Sack",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "45",
+    "article_number": "52390",
+    "article": "Speisezwiebeln 1kg Netz",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "301",
+    "article_number": "50004",
+    "article": "Bananen",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "305",
+    "article_number": "50020",
+    "article": "Äpfel Jonagold lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "310",
+    "article_number": "50045",
+    "article": "Tafelbirnen lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "320",
+    "article_number": "50080",
+    "article": "Clementinen lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 2
+  },
+  {
+    "plu": "325",
+    "article_number": "50100",
+    "article": "Saftorangen 1,5kg Netz",
+    "category": "Obst",
+    "sales_type": "Stückware",
+    "source_page": 2
+  },
+  {
+    "plu": "330",
+    "article_number": "50125",
+    "article": "Zitronen 500g Netz",
+    "category": "Obst",
+    "sales_type": "Stückware",
+    "source_page": 2
+  },
+  {
+    "plu": "340",
+    "article_number": "50160",
+    "article": "Tafeltrauben hell lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 2
+  },
+  {
+    "plu": "350",
+    "article_number": "50200",
+    "article": "Wassermelone lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 2
+  },
+  {
+    "plu": "360",
+    "article_number": "50240",
+    "article": "Mango genussreif",
+    "category": "Obst",
+    "sales_type": "Stückware",
+    "source_page": 2
+  },
+  {
+    "plu": "370",
+    "article_number": "50280",
+    "article": "Avocado vorgereift",
+    "category": "Obst",
+    "sales_type": "Stückware",
+    "source_page": 2
+  },
+  {
+    "plu": "814",
+    "article_number": null,
+    "article": "Weizenbrötchen",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "0814",
+    "article_number": null,
+    "article": "Kaiserbrötchen",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "815",
+    "article_number": null,
+    "article": "Mehrkornbrötchen",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "820",
+    "article_number": null,
+    "article": "Buttercroissant",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "825",
+    "article_number": null,
+    "article": "Laugenstange",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "830",
+    "article_number": null,
+    "article": "Schoko-Croissant",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "840",
+    "article_number": null,
+    "article": "Kürbiskernbrötchen",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "850",
+    "article_number": null,
+    "article": "Weltmeisterbrötchen",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "860",
+    "article_number": null,
+    "article": "Steinofenbaguette 250g",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "870",
+    "article_number": null,
+    "article": "Puten-Käse-Stange",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 4
+  },
+  {
+    "plu": "875",
+    "article_number": null,
+    "article": "Pizza-Snack Salami",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 4
+  },
+  {
+    "plu": "880",
+    "article_number": null,
+    "article": "Bauernbrot 750g",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 4
+  },
+  {
+    "plu": "885",
+    "article_number": null,
+    "article": "Krustenbrot 1000g",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 4
+  },
+  {
+    "plu": "890",
+    "article_number": null,
+    "article": "Vollkornbrot 500g",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 4
+  },
+  {
+    "plu": "448/449",
+    "article_number": null,
+    "article": "Schwip Schwap / light 0,5l",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
+  },
+  {
+    "plu": "450",
+    "article_number": "40012",
+    "article": "Mineralwasser Sprudel 0,7l Kasten",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
+  },
+  {
+    "plu": "455",
+    "article_number": "40035",
+    "article": "Pilsener Bier 20x0,5l Kasten",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
+  },
+  {
+    "plu": "460",
+    "article_number": "40080",
+    "article": "Cola / Zero 1,5l Kasten 6er",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
+  },
+  {
+    "plu": "465",
+    "article_number": "40110",
+    "article": "Fruchtsaft Orange 1,0l PET Kasten",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
+  }
+]
