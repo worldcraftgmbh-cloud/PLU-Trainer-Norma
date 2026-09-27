@@ -17,7 +17,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="PLU Norma">
-  <meta name="theme-color" content="#d6001c">
+  <meta name="theme-color" content="#121417">
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -63,10 +63,14 @@
       animation: pulseGlow 1.8s infinite;
     }
 
-    /* Warm, rich Norma Red to Orange gradient background */
+    /* Dark Anthracite/Black background for HUD aesthetic */
     .hud-grid-bg {
-      background: linear-gradient(135deg, #7a000d 0%, #d6001c 45%, #e65100 100%);
-      background-attachment: fixed;
+      background-color: #121417;
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(214, 0, 28, 0.15) 0%, transparent 70%),
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 100% 100%, 30px 30px, 30px 30px;
     }
 
     /* Custom scrollbar */
