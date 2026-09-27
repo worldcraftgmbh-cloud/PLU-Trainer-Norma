@@ -1,5 +1,77 @@
 [
   {
+    "plu": "54",
+    "article_number": "52733",
+    "article": "Aubergine Stück",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "24",
+    "article_number": "52266",
+    "article": "Bio Gurke",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "65",
+    "article_number": "52400",
+    "article": "Blaukraut",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "12",
+    "article_number": "52050",
+    "article": "Blumenkohl",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "14",
+    "article_number": "51553",
+    "article": "Broccoli",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "61",
+    "article_number": "52454",
+    "article": "Bunte Salate",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "9",
+    "article_number": "52382",
+    "article": "Eisbergsalat",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "62",
+    "article_number": "52631",
+    "article": "Endiviensalat",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "31",
+    "article_number": "71130",
+    "article": "Halloweenkürbis",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
     "plu": "4",
     "article_number": "52255",
     "article": "Gurken",
@@ -8,51 +80,427 @@
     "source_page": 1
   },
   {
-    "plu": "12",
-    "article_number": "52210",
-    "article": "Eisbergsalat",
+    "plu": "11",
+    "article_number": "52157",
+    "article": "Karotten 2kg",
     "category": "Gemüse",
     "sales_type": "Stückware",
     "source_page": 1
   },
   {
-    "plu": "15",
-    "article_number": "52280",
+    "plu": "106",
+    "article_number": "50588",
+    "article": "Kartoffeln 10kg",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "16",
+    "article_number": "52583",
+    "article": "Kohlrabi",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "8",
+    "article_number": "51562",
+    "article": "Kopfsalat",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "81",
+    "article_number": "71074",
+    "article": "Kürbis Mix",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "70",
+    "article_number": "52677",
+    "article": "Kugelrettich",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "17",
+    "article_number": "51247",
+    "article": "Lauch/Porree",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "57",
+    "article_number": "53249",
+    "article": "Lauchzwiebeln",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "7",
+    "article_number": "52180",
+    "article": "Paprika Mix",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "67",
+    "article_number": "52190",
+    "article": "Paprika rot 500g",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "50",
+    "article_number": "52657",
+    "article": "Radieschen",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "68",
+    "article_number": "50998",
+    "article": "Rettich",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "110",
+    "article_number": "50790",
+    "article": "Rettich rot Bund",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "96",
+    "article_number": "71116",
+    "article": "Staudensellerie",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "129",
+    "article_number": "51394",
+    "article": "Salat-Trio mit Wurzelballen",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "95",
+    "article_number": "52357",
+    "article": "Kopfsalat mit Wurzelballen",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "82",
+    "article_number": "52879",
+    "article": "Sellerie Stück",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "99",
+    "article_number": "50086",
+    "article": "Spargel 1,5 kg",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "108",
+    "article_number": "53292",
+    "article": "Speisekürbis Hokkaido",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "77",
+    "article_number": "52601",
+    "article": "Wirsing Stück",
+    "category": "Gemüse",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "40",
+    "article_number": "50103",
+    "article": "Ananas",
+    "category": "Obst",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "74",
+    "article_number": "50577",
+    "article": "Avocado Hass",
+    "category": "Obst",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "47",
+    "article_number": "50460",
+    "article": "Erdbeeren 500g",
+    "category": "Obst",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "102",
+    "article_number": "50976",
+    "article": "Feigen",
+    "category": "Obst",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "76",
+    "article_number": "50151",
+    "article": "Galiamelone",
+    "category": "Obst",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "117",
+    "article_number": "50905",
+    "article": "Granatapfel",
+    "category": "Obst",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "38",
+    "article_number": "50852",
+    "article": "Grapefruit",
+    "category": "Obst",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "37",
+    "article_number": "50500",
+    "article": "Honigmelone",
+    "category": "Obst",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "121",
+    "article_number": "50803",
+    "article": "Kaki",
+    "category": "Obst",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "25",
+    "article_number": "50241",
+    "article": "Kiwi Gold",
+    "category": "Obst",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "124",
+    "article_number": "51337",
+    "article": "Kiwi grün, Stück",
+    "category": "Obst",
+    "sales_type": "Stückware",
+    "source_page": 1
+  },
+  {
+    "plu": "364",
+    "article_number": "5151",
+    "article": "Chinakohl lose",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "386",
+    "article_number": "71128",
+    "article": "Fenchel lose",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "10",
+    "article_number": "52418",
+    "article": "Flachkohl lose",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "368",
+    "article_number": "51522",
+    "article": "Ingwer (Bio) lose",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "346",
+    "article_number": "52441",
+    "article": "Knoblauch lose",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "360",
+    "article_number": "51880",
+    "article": "Mini Gurken lose",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "363",
+    "article_number": "53453",
+    "article": "Cherry-Rispentomaten lose",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "307",
+    "article_number": "52184",
+    "article": "Paprika lose",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "309",
+    "article_number": "71129",
+    "article": "Rote Bete lose",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "365",
+    "article_number": "52413",
+    "article": "Rotkohl lose",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "355",
+    "article_number": "71122",
+    "article": "Süßkartoffeln lose",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "348",
+    "article_number": "51532",
+    "article": "Spargel lose weiß",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "394",
+    "article_number": "71131",
+    "article": "Spitzkohl lose",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "330",
+    "article_number": "51924",
+    "article": "Speisekürbis Bio",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "306",
+    "article_number": "52322",
+    "article": "Strauch/Rispentomaten lose",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "393",
+    "article_number": "51759",
+    "article": "Tomaten lose Ochsenherzen",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "377",
+    "article_number": "71013",
+    "article": "Wirsing lose",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "395",
+    "article_number": "52403",
+    "article": "Weißkohl lose",
+    "category": "Gemüse",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "343",
+    "article_number": "52515",
     "article": "Zucchini lose",
     "category": "Gemüse",
     "sales_type": "Wiegeware",
     "source_page": 1
   },
   {
-    "plu": "22",
-    "article_number": "52300",
-    "article": "Tomaten lose",
-    "category": "Gemüse",
+    "plu": "322",
+    "article_number": "53366",
+    "article": "Äpfel rot lose",
+    "category": "Obst",
     "sales_type": "Wiegeware",
     "source_page": 1
   },
   {
-    "plu": "25",
-    "article_number": "52315",
-    "article": "Paprika rot lose",
-    "category": "Gemüse",
+    "plu": "321",
+    "article_number": "51275",
+    "article": "Äpfel hell lose",
+    "category": "Obst",
     "sales_type": "Wiegeware",
     "source_page": 1
   },
   {
-    "plu": "30",
-    "article_number": "52340",
-    "article": "Kartoffeln 2,5kg Sack",
-    "category": "Gemüse",
-    "sales_type": "Stückware",
-    "source_page": 1
-  },
-  {
-    "plu": "45",
-    "article_number": "52390",
-    "article": "Speisezwiebeln 1kg Netz",
-    "category": "Gemüse",
-    "sales_type": "Stückware",
+    "plu": "351",
+    "article_number": "50744",
+    "article": "Aprikosen lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
     "source_page": 1
   },
   {
@@ -64,76 +512,356 @@
     "source_page": 1
   },
   {
-    "plu": "305",
-    "article_number": "50020",
-    "article": "Äpfel Jonagold lose",
+    "plu": "201",
+    "article_number": "51872",
+    "article": "Bio Bananen Fair Trade",
     "category": "Obst",
     "sales_type": "Wiegeware",
     "source_page": 1
   },
   {
-    "plu": "310",
-    "article_number": "50045",
-    "article": "Tafelbirnen lose",
+    "plu": "323",
+    "article_number": "51045",
+    "article": "Birnen lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "334",
+    "article_number": "51456",
+    "article": "Clementinen/Manderinen lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "347",
+    "article_number": "50669",
+    "article": "Erdbeeren lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "344",
+    "article_number": "51917",
+    "article": "Johannisbeeren rot lose",
     "category": "Obst",
     "sales_type": "Wiegeware",
     "source_page": 1
   },
   {
     "plu": "320",
-    "article_number": "50080",
-    "article": "Clementinen lose",
+    "article_number": "51290",
+    "article": "Maronen lose",
     "category": "Obst",
     "sales_type": "Wiegeware",
-    "source_page": 2
+    "source_page": 1
   },
   {
-    "plu": "325",
-    "article_number": "50100",
-    "article": "Saftorangen 1,5kg Netz",
-    "category": "Obst",
-    "sales_type": "Stückware",
-    "source_page": 2
-  },
-  {
-    "plu": "330",
-    "article_number": "50125",
-    "article": "Zitronen 500g Netz",
-    "category": "Obst",
-    "sales_type": "Stückware",
-    "source_page": 2
-  },
-  {
-    "plu": "340",
-    "article_number": "50160",
-    "article": "Tafeltrauben hell lose",
+    "plu": "327",
+    "article_number": "51111",
+    "article": "Nektarinen gelbfleischig lose",
     "category": "Obst",
     "sales_type": "Wiegeware",
-    "source_page": 2
+    "source_page": 1
   },
   {
-    "plu": "350",
-    "article_number": "50200",
+    "plu": "342",
+    "article_number": "50283",
+    "article": "Orangen lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "328",
+    "article_number": "51156",
+    "article": "Pfirsiche lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "329",
+    "article_number": "71132",
+    "article": "Papaya lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "352",
+    "article_number": "51075",
+    "article": "Pflaumen lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "379",
+    "article_number": "51407",
+    "article": "Plattpfirsiche lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "366",
+    "article_number": "50670",
+    "article": "Süß-Kirschen lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "770",
+    "article_number": "2362",
+    "article": "Walnüsse lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "336",
+    "article_number": "50488",
     "article": "Wassermelone lose",
     "category": "Obst",
     "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "338",
+    "article_number": "51890",
+    "article": "Mini-Wassermelone lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "332",
+    "article_number": "71134",
+    "article": "Weintrauben dunkel kernlos",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
+    "source_page": 1
+  },
+  {
+    "plu": "331",
+    "article_number": "53426",
+    "article": "Weintrauben hell lose",
+    "category": "Obst",
+    "sales_type": "Wiegeware",
     "source_page": 2
   },
   {
-    "plu": "360",
-    "article_number": "50240",
-    "article": "Mango genussreif",
+    "plu": "71",
+    "article_number": "50384",
+    "article": "Mango",
     "category": "Obst",
     "sales_type": "Stückware",
     "source_page": 2
   },
   {
-    "plu": "370",
-    "article_number": "50280",
-    "article": "Avocado vorgereift",
+    "plu": "144",
+    "article_number": "51495",
+    "article": "Zitronen Stück",
     "category": "Obst",
     "sales_type": "Stückware",
     "source_page": 2
+  },
+  {
+    "plu": "545",
+    "article_number": null,
+    "article": "Blätterteig Apfeldreieck",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "817",
+    "article_number": null,
+    "article": "Brezel / Laugenbrezeln",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "486",
+    "article_number": null,
+    "article": "Berliner Brezel",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "835",
+    "article_number": null,
+    "article": "Buttercroissant",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "820",
+    "article_number": null,
+    "article": "Laugenstange",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "546",
+    "article_number": null,
+    "article": "Dinkelbrötchen",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "633",
+    "article_number": null,
+    "article": "Donuts",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "840",
+    "article_number": null,
+    "article": "Franzbrötchen",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "495",
+    "article_number": null,
+    "article": "Fränkisches Mehrkornbrot",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "497",
+    "article_number": null,
+    "article": "Fränkisches Krustenbrot",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "463",
+    "article_number": null,
+    "article": "Käseschnecke",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "496",
+    "article_number": null,
+    "article": "Körnerlaugenecke",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "897",
+    "article_number": null,
+    "article": "Knusperstange",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "534",
+    "article_number": null,
+    "article": "Coppenrath & Wiese Dinkelbrötchen",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "819",
+    "article_number": null,
+    "article": "Quarkbällchen",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "455",
+    "article_number": null,
+    "article": "Rosenbrötchen",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "647",
+    "article_number": null,
+    "article": "Pizza Classico",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "466",
+    "article_number": null,
+    "article": "Pfefferbrötchen",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "636",
+    "article_number": null,
+    "article": "Schinkenkäsecroissant",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "810",
+    "article_number": null,
+    "article": "Mamor-Croissant mit Schokocreme",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "533",
+    "article_number": null,
+    "article": "Schoko-Nuss-Croissant",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "498",
+    "article_number": null,
+    "article": "Wienerle-Croissant",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "543",
+    "article_number": null,
+    "article": "Wurzelbrot",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
+  },
+  {
+    "plu": "645",
+    "article_number": null,
+    "article": "Walnuss-Honig-Brötchen",
+    "category": "Backwaren",
+    "sales_type": "Prebake",
+    "source_page": 3
   },
   {
     "plu": "814",
@@ -152,137 +880,185 @@
     "source_page": 3
   },
   {
-    "plu": "815",
+    "plu": "458",
     "article_number": null,
-    "article": "Mehrkornbrötchen",
+    "article": "Schokocroissant mit Schokonippse",
     "category": "Backwaren",
     "sales_type": "Prebake",
-    "source_page": 3
+    "source_page": 4
   },
   {
-    "plu": "820",
+    "plu": "634",
     "article_number": null,
-    "article": "Buttercroissant",
+    "article": "Chia Weltmeisterbrötchen",
     "category": "Backwaren",
     "sales_type": "Prebake",
-    "source_page": 3
+    "source_page": 4
   },
   {
-    "plu": "825",
-    "article_number": null,
-    "article": "Laugenstange",
-    "category": "Backwaren",
-    "sales_type": "Prebake",
-    "source_page": 3
+    "plu": "801",
+    "article_number": "92801",
+    "article": "Burgkrone Pilsener 20x0,5l Kasten",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
   },
   {
-    "plu": "830",
-    "article_number": null,
-    "article": "Schoko-Croissant",
-    "category": "Backwaren",
-    "sales_type": "Prebake",
-    "source_page": 3
+    "plu": "804",
+    "article_number": "92804",
+    "article": "Burgkrone Helles 20x0,5l Kasten",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
   },
   {
-    "plu": "840",
-    "article_number": null,
-    "article": "Kürbiskernbrötchen",
-    "category": "Backwaren",
-    "sales_type": "Prebake",
-    "source_page": 3
+    "plu": "852",
+    "article_number": "80216",
+    "article": "Franziskaner Hefeweißbier 20x0,5l Kasten",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
   },
   {
-    "plu": "850",
-    "article_number": null,
-    "article": "Weltmeisterbrötchen",
-    "category": "Backwaren",
-    "sales_type": "Prebake",
-    "source_page": 3
+    "plu": "858",
+    "article_number": "92858",
+    "article": "Oettinger 20x0,5l Kasten",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
+  },
+  {
+    "plu": "864",
+    "article_number": "97114",
+    "article": "Kulmbacher, Pils Edelherb 20x0,5l Kasten",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
+  },
+  {
+    "plu": "861",
+    "article_number": "46982",
+    "article": "Mönchshof, Lager hell 20x0,5l Kasten",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
+  },
+  {
+    "plu": "869",
+    "article_number": "38288",
+    "article": "Hopfenseer hell 20x0,5l Kasten",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
+  },
+  {
+    "plu": "773",
+    "article_number": "86919",
+    "article": "Erdinger Weißbier alkoholfrei 20x0,5l Kasten",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
   },
   {
     "plu": "860",
-    "article_number": null,
-    "article": "Steinofenbaguette 250g",
-    "category": "Backwaren",
-    "sales_type": "Prebake",
-    "source_page": 3
+    "article_number": "92860",
+    "article": "Augustiner hell 20x0,5l Kasten",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
   },
   {
-    "plu": "870",
-    "article_number": null,
-    "article": "Puten-Käse-Stange",
-    "category": "Backwaren",
-    "sales_type": "Prebake",
-    "source_page": 4
+    "plu": "776",
+    "article_number": "86775",
+    "article": "Paulaner Hefe Weißbier 20x0,5l Kasten",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
   },
   {
-    "plu": "875",
-    "article_number": null,
-    "article": "Pizza-Snack Salami",
-    "category": "Backwaren",
-    "sales_type": "Prebake",
-    "source_page": 4
+    "plu": "782",
+    "article_number": "2157",
+    "article": "Paulaner Hefe Weißbier 1/2 Kasten",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
   },
   {
-    "plu": "880",
-    "article_number": null,
-    "article": "Bauernbrot 750g",
-    "category": "Backwaren",
-    "sales_type": "Prebake",
-    "source_page": 4
+    "plu": "866",
+    "article_number": "46999",
+    "article": "Kapuziner, Hefe-Weissbier 20x0,5l Kasten",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
   },
   {
-    "plu": "885",
-    "article_number": null,
-    "article": "Krustenbrot 1000g",
-    "category": "Backwaren",
-    "sales_type": "Prebake",
-    "source_page": 4
+    "plu": "712",
+    "article_number": "92890",
+    "article": "Kaiserkrone Pils 0,5l EW-Flasche",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
   },
   {
-    "plu": "890",
+    "plu": "729",
+    "article_number": "92892",
+    "article": "Klosterhof Pils 0,5l EW-Flasche",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
+  },
+  {
+    "plu": "798",
+    "article_number": "92893",
+    "article": "Kaiserkrone Hefe-Weisse 0,5l EW-Flasche",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
+  },
+  {
+    "plu": "736",
+    "article_number": "92894",
+    "article": "Kaiserkrone Gold 0,5l EW-Flasche",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
+  },
+  {
+    "plu": "743",
+    "article_number": "92888",
+    "article": "Kaiserkrone Radler 0,5l EW-Flasche",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
+  },
+  {
+    "plu": "721",
+    "article_number": "98893",
+    "article": "Kaiserkrone 6.0 0,5l EW-Flasche",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
+  },
+  {
+    "plu": "862",
+    "article_number": "20137",
+    "article": "WÜRZBURGER HOFBRÄU Prem. Pilsner 0,5l MW-Flasche",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
+  },
+  {
+    "plu": "582",
     "article_number": null,
-    "article": "Vollkornbrot 500g",
-    "category": "Backwaren",
-    "sales_type": "Prebake",
-    "source_page": 4
+    "article": "Coca Cola",
+    "category": "Getränke",
+    "sales_type": "Kasten / Flasche",
+    "source_page": 5
   },
   {
     "plu": "448/449",
     "article_number": null,
     "article": "Schwip Schwap / light 0,5l",
-    "category": "Getränke",
-    "sales_type": "Kasten / Flasche",
-    "source_page": 5
-  },
-  {
-    "plu": "450",
-    "article_number": "40012",
-    "article": "Mineralwasser Sprudel 0,7l Kasten",
-    "category": "Getränke",
-    "sales_type": "Kasten / Flasche",
-    "source_page": 5
-  },
-  {
-    "plu": "455",
-    "article_number": "40035",
-    "article": "Pilsener Bier 20x0,5l Kasten",
-    "category": "Getränke",
-    "sales_type": "Kasten / Flasche",
-    "source_page": 5
-  },
-  {
-    "plu": "460",
-    "article_number": "40080",
-    "article": "Cola / Zero 1,5l Kasten 6er",
-    "category": "Getränke",
-    "sales_type": "Kasten / Flasche",
-    "source_page": 5
-  },
-  {
-    "plu": "465",
-    "article_number": "40110",
-    "article": "Fruchtsaft Orange 1,0l PET Kasten",
     "category": "Getränke",
     "sales_type": "Kasten / Flasche",
     "source_page": 5
